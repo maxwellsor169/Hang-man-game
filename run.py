@@ -28,3 +28,18 @@ def get_player_input(guessed_letters):
 
         if _validate_input(player_input, guessed_letters):
             return player_input        
+
+def _validate_input(palyer_input, guessed_letters):
+    """
+    This function will check the validation of the guessing player's inputs
+    """
+    try:
+        if len(player_input) != 1:
+            raise ValueError(
+                f"You have to give only one letter, you gave {len(player_input)}"
+            )
+    except ValueError as e:
+            print(Fore.RED + f"Your input is not correct: {e}")
+            return False
+
+    return True        
