@@ -39,7 +39,13 @@ def _validate_input(palyer_input, guessed_letters):
                 f"You have to give only one letter, you gave {len(player_input)}"
             )
     except ValueError as e:
-            print(Fore.RED + f"Your input is not correct: {e}")
+            print(Fore.RED + f"{player_input} is not in guessed_letters: {e}")
             return False
 
-    return True        
+    return True
+
+def join_guessed_letters(guessed_letters):
+    """
+    This function will join the guessed letters to produce the selected word
+    """
+    return " ".join(sorted(guessed_letters))           
