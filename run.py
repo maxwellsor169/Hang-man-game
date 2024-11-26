@@ -66,6 +66,9 @@ def build_guessed_word(target_word, guessed_letters):
     return " ".join(current_letters)
 
 def draw_hanged_man(wrong_guesses):
+    """
+    This fuction will draw the hanged man whenever a wrong guess is made
+    """
     hanged_man = [
         r"""
    -----
@@ -162,3 +165,14 @@ def draw_hanged_man(wrong_guesses):
     ]
 
     print(hanged_man[wrong_guesses])                   
+
+def game_over(wrong_guesses, target_word, guessed_letters):
+    """
+    This fuction will check if your number of wrong guesses equate to your 
+    maximum number of chances allowed, then will run the game over fuction 
+    """
+    if wrong_guesses == MAX_INCORRECT_GUESSES:
+        return True
+    if set(target_word) <= guessed_letters:
+        return True
+    return False    
