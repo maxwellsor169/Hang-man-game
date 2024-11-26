@@ -15,7 +15,7 @@ def selected_word():
     """
     with open("gaming_words.txt", mode="r") as words:
        word_list = words.readlines()
-    return random.choice(word_list)
+    return random.choice(word_list).strip()
 
 def get_player_input(guessed_letters):
     """
@@ -63,4 +63,102 @@ def build_guessed_word(target_word, guessed_letters):
             current_letters.append(letter)
         else:
             current_letters.append("_")
-    return " ".join(current_letters)           
+    return " ".join(current_letters)
+
+def draw_hanged_man(wrong_guesses):
+    hanged_man = [
+        r"""
+   -----
+  |   |
+      |
+      |
+      |
+      |
+      |
+      |
+      |
+      |
+-------
+""",
+         r"""
+  -----
+  |   |
+  O   |
+      |
+      |
+      |
+      |
+      |
+      |
+      |
+-------
+""",
+         r"""
+  -----
+  |   |
+  O   |
+ ---  |
+  |   |
+  |   |
+      |
+      |
+      |
+      |
+-------
+""",
+         r"""
+  -----
+  |   |
+  O   |
+ ---  |
+/ |   |
+  |   |
+      |
+      |
+      |
+      |
+-------
+""",
+         r"""
+  -----
+  |   |
+  O   |
+ ---  |
+/ | \ |
+  |   |
+      |
+      |
+      |
+      |
+-------
+""",
+         r"""
+  -----
+  |   |
+  O   |
+ ---  |
+/ | \ |
+  |   |
+ ---  |
+/     |
+|     |
+      |
+-------
+""",
+         r"""
+  -----
+  |   |
+  O   |
+ ---  |
+/ | \ |
+  |   |
+ ---  |
+/   \ |
+|   | |
+      |
+-------
+""",                                         
+                    
+    ]
+
+    print(hanged_man[wrong_guesses])                   
