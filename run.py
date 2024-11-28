@@ -219,3 +219,20 @@ if __name__ == "__main__":
     game_loop()  
     
 
+def replay():
+    while True:
+        try:
+            print("Would you like to play again?\n")
+            restart_game = input("Y or N:\n").upper()
+            if restart_game == "Y":
+                print("Lets play again")
+                game_loop()
+                break
+            elif restart_game == "N":
+                print("Thank you for playing!\n")
+                break
+            else:
+                print("Please Enter: Y or N\n")
+        except ValueError:
+            print("Please Enter: Y or N\n")
+replay()   
