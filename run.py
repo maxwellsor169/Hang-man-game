@@ -27,9 +27,11 @@ def get_player_input(guessed_letters):
         player_input = input("Guess a letter:\n").lower()
 
         if _validate_input(player_input, guessed_letters):
-            return player_input        
+            print("Correct input")
+            break
+    return player_input        
 
-def _validate_input(palyer_input, guessed_letters):
+def _validate_input(player_input, guessed_letters):
     """
     This function will check the validation of the guessing player's inputs
     """
@@ -177,8 +179,8 @@ def game_over(wrong_guesses, target_word, guessed_letters):
         return True
     return False    
 
-# This will run the game loop continuously
-if __name__ == "__main__":
+# This will run the game loop continuously in a loop
+def game_loop():
     #Declaring all the initial conditions for the game loop to run
     target_word = selected_word()          
     guessed_letters = set()
@@ -205,16 +207,15 @@ if __name__ == "__main__":
         guessed_letters.add(player_guess)
         guessed_word = build_guessed_word(target_word, guessed_letters)
 
-    # Game over
+    # The following conditions will run the Game over function 
     draw_hanged_man(wrong_guesses)
     if wrong_guesses == MAX_INCORRECT_GUESSES:
         print("Sorry, you lost!")
     else:
         print("Congrats! You did it!")
-    print(f"Your word was: {target_word}")  
+    print(f"Your word was: {target_word}")    
 
-
-
-
-
+if __name__ == "__main__":
+    game_loop()  
+    
 
