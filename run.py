@@ -181,7 +181,9 @@ def game_over(wrong_guesses, target_word, guessed_letters):
 
 # This will run the game loop continuously in a loop
 def game_loop():
-    #Declaring all the initial conditions for the game loop to run
+    """
+    Declaring all the initial conditions for the game loop to run
+    """
     target_word = selected_word()          
     guessed_letters = set()
     guessed_word = build_guessed_word(target_word, guessed_letters)
@@ -220,6 +222,10 @@ if __name__ == "__main__":
     
 
 def replay():
+    """
+    This function will start the game again if you want and 
+    will end it if you don't want to play again
+    """
     while True:
         try:
             print("Would you like to play again?\n")
