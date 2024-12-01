@@ -87,3 +87,134 @@ However, there is also a chance for the player to choose if he/she wants to play
 ![Correct input](doc/images/correct-input1.png)
 
 ![Wrong input](doc/images/wrong-input.png)
+
+
+### Hangman Drawing
+- A hangman drawing is fully done when a hangman player makes 6 wrong guesses while guessing a particular word in a hangman game.
+
+![Hangman Drawing](doc/images/hangman-drawn1.png)
+![Hangman Drawing](doc/images/hangman-drawn2.png)
+![Hangman Drawing](doc/images/hangman-drawn3.png)
+![Hangman Drawing](doc/images/hangman-drawn4.png)
+![Hangman Drawing](doc/images/hangman-drawn5.png)
+![Hangman Drawing](doc/images/hangman-drawn6.png)
+
+### Win And Lose
+- As a hangman player, you **Win** the game only when you have guessed a computer-selected word correctly.
+- You **Lose** after 6 wrong guesses in attempt to guess a selected word correctly.
+- You also have another chance to redeem yourself by having a replay of the game. 
+
+### Colors For Feedback
+**Green** is for the welcome message and valid inputs.
+
+**Red** is for incorrect inputs.
+
+### The Guide
+- This part of the game basically outlines the kind of words to expect with examples.
+
+### Error Handling
+-This part deals with wrong inputs with messages telling you your mistake.
+
+
+## IMPORTED LIBRARIES
+
+### 1.random
+- This selects any of the first twenty elements randomly for guessing.
+
+### 2.Colorama
+- This gives a special color display to targetted print-out messages.
+
+### Hangman_game
+- A custom module that contain the drawings of the hangman game.
+
+
+## TECHNOLOGIES USED
+
+### Languages
+- Python: This was used to develop the functionality of the hang-man-game
+
+### Frameworks, Libraries and Programes
+- GitHub- used to store and keep the project files.
+- Gitpod- provides the workplace to develop the python codes.
+- [Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) - To test the websites performance and accesibility.
+- [Am I Responsive](https://ui.dev/amiresponsive) - To test responsivness.
+- [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/) - To validate my python code.
+- [Heroku](https://dashboard.heroku.com/)- To use for the deployment of the project.
+- Code institute workplace template.
+
+## TESTING
+
+### 1.Manual Testing
+
+#### Welcome page
+- **Test**: Loading of the welcome page
+- **Expected Results**: A display of the welcome message, the guide, and the first selected word
+- **Results**: Displays as expected.
+
+#### Guessing a Letter
+- **Test**: Input a valid letter(s,y,z)
+- **Expected Results**: The selected letter will be displayed in a list of letters if found in the word, else will be prompted with a message.
+- **Results**: Performs correctly as expected for correct and wrong inputs.
+
+- **Test**: blank input or multiple letters(ab, hj, __)
+- **Expected Results**: The inputs will rejected with a feedback message in color code.
+- **Results**: Input will be rejected and signaled with the correct input type.
+
+
+#### Winning and Lossing
+- **Test**: a player guesses the correct word before exhausting all his chances. 
+- **Expected Results**: a display message saying **Congrats You Did It**.
+- **Results**: Works as expected.
+
+- **Test**: when a player uses all his/her 6 chances to guess the selected word.
+- **Expected Results**: a display message saying **Sorry You Lost!** followed with the correct word.
+- **Results**: should work as expected, with a replay option at the end.
+
+
+#### Replay functionality
+
+- **Test**: prompt displays to replay again
+- **Expected Results**: game should restart all over agaain.
+- **Results**: game welcome page loads with no errors.
+
+**Test**: reject to replay
+- **Expected Results**: display a Thank You message.
+- **Results**: game is ended.
+
+
+### 2. Validation
+
+<details>
+<summary>run.py</summary>
+All clear, no errors found [CI Python Linter](https://pep8ci.herokuapp.com/).
+
+![Validation](doc/images/python-validation.png)
+</details>
+
+**PEP8 Compliance**:
+- Code was tested on PEP8 python linter to clearify all possible errors.
+- Clearing of whitespaces after codes were done.
+- Correct writting of docstrings.
+- Reducing the length of line characters to the standard 79characters
+
+
+### Checking on Browsers and Other Devices
+
+- **Device check**: the game was tested on a laptop and a mobile phone and its use and functionality was ok.
+- **Browser**: game was tested on chrome and microsoft edge, funtions and its display was ok.
+
+
+## Deployment
+
+### Steps for Heroku Deployment
+1. Open a registered account with Heroku to obtain access to Heroku Dashboard
+2. When access is granted, you go to [Heroku](https://dashboard.heroku.com/)
+3. Create a new application from the dashboard.
+4. Pick a project name, select you region and click on Create App.
+5. Go to settings
+6. Input your Config Vars(Keys and Values), if needed
+7. Select Heroku/Python first followed by Heroku/Nodejs under buildpacks settings 
+8. Go to deployment tab and under deployment method, select Github and click connect.
+9. Make sure to connect to the correct repo name on heroku.
+10. Select either Automatic or Manual deployment 
+11. Go to view to see your live project deployed   
