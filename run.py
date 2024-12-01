@@ -186,9 +186,7 @@ def game_loop():
         if player_guess in target_word:
             print("Great guess!")
         else:
-            print(Fore.RED +
-            "Sorry, it's not there."
-            + Fore.RESET)
+            print(Fore.RED + "Sorry, it's not there." + Fore.RESET)
             wrong_guesses += 1
 
         guessed_letters.add(player_guess)

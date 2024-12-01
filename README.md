@@ -83,3 +83,7 @@ However, there is also a chance for the player to choose if he/she wants to play
 ### Letter Guessing
 - The player will input one letter at a time with validation to handle wrong inputs or characters.
 - **Correct inputs** will display a collection of letters, and **wrong input** will add a part to the hangman drawing.
+![Correct input](doc/correct-input.png)
+![Correct input](doc/images/correct-input1.png)
+
+![Wrong input](doc/images/wrong-input.png)
