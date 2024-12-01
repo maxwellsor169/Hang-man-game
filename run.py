@@ -21,7 +21,7 @@ def get_player_input(guessed_letters):
         player_input = input("Guess a letter:\n").lower()
 
         if _validate_input(player_input, guessed_letters):
-            print("Correct input")
+            print("Valid input")
             break
     return player_input
 
@@ -186,7 +186,9 @@ def game_loop():
         if player_guess in target_word:
             print("Great guess!")
         else:
-            print("Sorry, it's not there.")
+            print(Fore.RED +
+            "Sorry, it's not there."
+            + Fore.RESET)
             wrong_guesses += 1
 
         guessed_letters.add(player_guess)

@@ -7,7 +7,7 @@ Link to the live project: [Hangman Game](https://hang-man-app-a6a9afadde6e.herok
 ![Hangman Responsive image](doc/images/Hangman-Responsive-image.png)
 
 ## Content
-- [How TO PLAY](#how-to-play)
+- [HOW TO PLAY](#how-to-play)
 - [USER EXPERIENCE](#user-experience)
 - [FEATURES](#features)
 - [IMPORTED LIBRARIES](#imported-libraries)
@@ -48,3 +48,38 @@ However, there is also a chance for the player to choose if he/she wants to play
 #### Additional Features
 - If a player inputs one letter twice and it's not in the word like that, it will be ignored.
 - If a player makes six incorrect guesses, the game is over.
+
+
+## USER EXPERIENCE
+
+#### User Goals
+- Play a game of guesses with a computer.
+- Get a clue of the kind of words to expect.
+- See the list of letters he/she is guessing.
+- Provide the correct inputs to avoid any error message.
+- Win the game.
+- Get the chance to play again after a win or loss.
+
+#### Visual Design
+- Green colour for the welcome message
+- Red colour for blank input
+
+
+## GAME FEATURES
+
+### Welcome Page
+- This page displays a hangman welcome message
+- Displays a few lines of guide for the game
+- The first word guess follows
+<details><summary>Welcome page</summary>
+
+![Welcome page](doc/images/welcome-page.png)
+</details>
+
+### Word Generation
+- A random word is selected from the first twenty elements list
+- The element names will be displayed in lowercase
+
+### Letter Guessing
+- The player will input one letter at a time with validation to handle wrong inputs or characters.
+- **Correct inputs** will display a collection of letters, and **wrong input** will add a part to the hangman drawing.
