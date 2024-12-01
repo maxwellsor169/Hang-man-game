@@ -189,12 +189,14 @@ def game_loop():
     guessed_word = build_guessed_word(target_word, guessed_letters)
     wrong_guesses = 0
     print(Fore.GREEN + "WELCOME TO HANGMAN GAME")
+    print("Your guessed words will be selected from the first twenty elements")
+    print("Example: hydrogen, boron")
 
 
     # This while loop will run the Game in a loop
     while not game_over(wrong_guesses, target_word, guessed_letters):
         draw_hanged_man(wrong_guesses)
-        print(f"Your first word is: {guessed_word}")
+        print(f"Your word is: {guessed_word}")
         print(
             "Current guessed letters: "
             f"{join_guessed_letters(guessed_letters)}\n"
