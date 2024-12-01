@@ -1,7 +1,7 @@
 import random
 import string
 from colorama import Fore, init
-import os
+
 init()
 
 MAX_INCORRECT_GUESSES = 6
@@ -179,7 +179,7 @@ def game_over(wrong_guesses, target_word, guessed_letters):
         return True
     return False    
 
-# This will run the game loop continuously in a loop
+# This will run the game in a loop
 def game_loop():
     """
     Declaring all the initial conditions for the game loop to run
@@ -190,7 +190,8 @@ def game_loop():
     wrong_guesses = 0
     print(Fore.GREEN + "WELCOME TO HANGMAN GAME")
 
-    # This while loop will run the Game in a continuous loop
+
+    # This while loop will run the Game in a loop
     while not game_over(wrong_guesses, target_word, guessed_letters):
         draw_hanged_man(wrong_guesses)
         print(f"Your first word is: {guessed_word}")
@@ -241,4 +242,13 @@ def replay():
                 print("Please Enter: Y or N\n")
         except ValueError:
             print("Please Enter: Y or N\n")
-replay()   
+
+
+def main():
+    replay() == replay()
+
+if __name__ == "__main__":
+    main()
+    
+
+
