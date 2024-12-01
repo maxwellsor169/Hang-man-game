@@ -188,7 +188,7 @@ def game_loop():
     guessed_letters = set()
     guessed_word = build_guessed_word(target_word, guessed_letters)
     wrong_guesses = 0
-    print("WELCOME TO HANGMAN GAME")
+    print(Fore.GREEN + "WELCOME TO HANGMAN GAME" + Fore.RESET)
     print("Your guessed words will be selected from the first twenty elements")
     print("Example: hydrogen, boron")
     # This while loop will run the Game in a loop
