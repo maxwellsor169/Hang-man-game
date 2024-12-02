@@ -124,8 +124,7 @@ However, there is also a chance for the player to choose if he/she wants to play
 ### 2.Colorama
 - This gives a special color display to targeted print-out messages.
 
-### Hangman_game
-- A custom module that contains the drawings of the hangman game.
+
 
 
 ## TECHNOLOGIES USED
