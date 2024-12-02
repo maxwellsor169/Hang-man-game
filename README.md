@@ -30,7 +30,7 @@ However, there is also a chance for the player to choose if he/she wants to play
 #### Guessing A Word
 - The hangman skeleton structure displays.
 - This next line displays the word to guess.
-- When you input the correct input you will be signaled CORRECT INPUT.
+- When you key in the correct input you will be signaled Great Guess.
 - The player will also be instructed to give letters in lowercase. 
 
 #### How To Win 
@@ -113,7 +113,7 @@ However, there is also a chance for the player to choose if he/she wants to play
 - This part of the game basically outlines the kind of words to expect with examples.
 
 ### Error Handling
--This part deals with wrong inputs with messages telling you your mistake.
+- This part deals with wrong inputs with messages telling you your mistake.
 
 
 ## IMPORTED LIBRARIES
