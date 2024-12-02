@@ -1,7 +1,7 @@
 # Hangman Game
 
 This is the story about the **Hangman Game.** This is a project written with Python codes aimed at getting players to guess correctly
-a randomly selected word from a pool of list containing the first twenty elements.
+a randomly selected word from a pool of lists containing the first twenty elements.
 
 Link to the live project: [Hangman Game](https://hang-man-app-a6a9afadde6e.herokuapp.com/)
 ![Hangman Responsive image](doc/images/Hangman-Responsive-image.png)
@@ -17,9 +17,9 @@ Link to the live project: [Hangman Game](https://hang-man-app-a6a9afadde6e.herok
 - [CREDITS](#credits)
 
 ## HOW TO PLAY
-The hangman game is a game of guessing words between the computer and a player. The computer will
-select a random word from a pool of lists containing the first twenty elements and the player guesses letters to form the word selected.
-The player has the chance for six(6) wrong guesses and after that will be signalled game over.
+The hangman game is a game of guessing words between the computer and a player. 
+The computer will select a random word from a pool of lists containing the first twenty elements and the player guesses letters to form the word selected.
+The player has the chance for six(6) wrong guesses and after that will be signaled game over.
 However, there is also a chance for the player to choose if he/she wants to play once more.
 
 
@@ -61,8 +61,8 @@ However, there is also a chance for the player to choose if he/she wants to play
 - Get the chance to play again after a win or loss.
 
 #### Visual Design
-- Green colour for the welcome message
-- Red colour for blank input
+- Green color for the welcome message
+- Red color for blank input
 
 
 ## GAME FEATURES
@@ -118,14 +118,14 @@ However, there is also a chance for the player to choose if he/she wants to play
 
 ## IMPORTED LIBRARIES
 
-### 1.random
+### 1.Random
 - This selects any of the first twenty elements randomly for guessing.
 
 ### 2.Colorama
-- This gives a special color display to targetted print-out messages.
+- This gives a special color display to targeted print-out messages.
 
 ### Hangman_game
-- A custom module that contain the drawings of the hangman game.
+- A custom module that contains the drawings of the hangman game.
 
 
 ## TECHNOLOGIES USED
@@ -133,10 +133,10 @@ However, there is also a chance for the player to choose if he/she wants to play
 ### Languages
 - Python: This was used to develop the functionality of the hang-man-game
 
-### Frameworks, Libraries and Programes
+### Frameworks, Libraries and Programs
 - GitHub- used to store and keep the project files.
-- Gitpod- provides the workplace to develop the python codes.
-- [Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) - To test the websites performance and accesibility.
+- Gitpod- provides the workplace to develop the Python codes.
+- [Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) - To test the website performance and accesibility.
 - [Am I Responsive](https://ui.dev/amiresponsive) - To test responsivness.
 - [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/) - To validate my python code.
 - [Heroku](https://dashboard.heroku.com/)- To use for the deployment of the project.
@@ -174,7 +174,7 @@ However, there is also a chance for the player to choose if he/she wants to play
 #### Replay functionality
 
 - **Test**: prompt displays to replay again
-- **Expected Results**: game should restart all over agaain.
+- **Expected Results**: the game should restart all over again.
 - **Results**: game welcome page loads with no errors.
 
 **Test**: reject to replay
@@ -192,16 +192,16 @@ All clear, no errors found [CI Python Linter](https://pep8ci.herokuapp.com/).
 </details>
 
 **PEP8 Compliance**:
-- Code was tested on PEP8 python linter to clearify all possible errors.
+- Code was tested on PEP8 python linter to clarify all possible errors.
 - Clearing of whitespaces after codes were done.
-- Correct writting of docstrings.
+- Correct writing of docstrings.
 - Reducing the length of line characters to the standard 79characters
 
 
 ### Checking on Browsers and Other Devices
 
-- **Device check**: the game was tested on a laptop and a mobile phone and its use and functionality was ok.
-- **Browser**: game was tested on chrome and microsoft edge, funtions and its display was ok.
+- **Device check**: the game was tested on a laptop and a mobile phone and its use and functionality were ok.
+- **Browser**: the game was tested on Chrome and Microsoft edge, funCtions and its display was ok.
 
 
 ## Deployment
@@ -210,11 +210,28 @@ All clear, no errors found [CI Python Linter](https://pep8ci.herokuapp.com/).
 1. Open a registered account with Heroku to obtain access to Heroku Dashboard
 2. When access is granted, you go to [Heroku](https://dashboard.heroku.com/)
 3. Create a new application from the dashboard.
-4. Pick a project name, select you region and click on Create App.
+4. Pick a project name, select your region, and click on Create App.
 5. Go to settings
 6. Input your Config Vars(Keys and Values), if needed
-7. Select Heroku/Python first followed by Heroku/Nodejs under buildpacks settings 
-8. Go to deployment tab and under deployment method, select Github and click connect.
-9. Make sure to connect to the correct repo name on heroku.
-10. Select either Automatic or Manual deployment 
-11. Go to view to see your live project deployed   
+7. Select Heroku/Python first followed by Heroku/Nodejs under build packs settings 
+8. Go to the deployment tab and under deployment method, select Github and click connect.
+9. Make sure to connect to the correct repo name on Heroku.
+10. Select either Automatic or Manual Deployment 
+11. Go to view to see your live project deployed
+
+### Forking Project On the GitHub Repository
+The steps to fork the GitHub repository are:
+1. Log into your [GitHub](https://github.com/).
+2. Go to the repository https://github.com/maxwellsor169/Hang-man-game.
+3. Click on the fork button on the top right-hand side of the screen.
+
+### Making a Local Clone
+
+-You log into your [GitHub](https://github.com/)
+- Locate the repository https://github.com/maxwellsor169/Hang-man-game.
+- Click on the code button 
+- Copy the URL for the repository.
+- Open the repository with a new terminal.
+- Change the current directory to the location that you want the cloned directory to be.
+- Type 'git clone' and paste the copied URL.
+- Press 'enter' to create the clone.
