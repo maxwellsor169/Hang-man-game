@@ -1,6 +1,7 @@
 """The main Hang man game file."""
 import random
 from colorama import Fore, init
+import hangman_game
 
 init()
 

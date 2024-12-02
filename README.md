@@ -235,3 +235,13 @@ The steps to fork the GitHub repository are:
 - Change the current directory to the location that you want the cloned directory to be.
 - Type 'git clone' and paste the copied URL.
 - Press 'enter' to create the clone.
+
+
+## CREDITS
+
+- Credit goes to:
+1. Tutorial note by Real Python(https://realpython.com/python-hangman/#step-1-set-up-the-hangman-project)
+2. Code Institute for the fundamental tutorials
+3. Project sample by (https://github.com/Code-Institute-Submissions/hangman-game-pp3-4/blob/main/run.py)
+4. My Mentor for always giving me the right information to do my projects.
+5. Google search for my twenty-element list.
