@@ -218,6 +218,14 @@ All clear, no errors found [CI Python Linter](https://pep8ci.herokuapp.com/).
 10. Select either Automatic or Manual Deployment 
 11. Go to view to see your live project deployed
 
+## Light House Performance
+
+<details><summary>Light House</summary>
+
+![Light House](doc/images/lighthouse.png)
+</details>
+
+
 ### Forking Project On the GitHub Repository
 The steps to fork the GitHub repository are:
 1. Log into your [GitHub](https://github.com/).
